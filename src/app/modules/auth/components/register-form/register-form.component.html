@@ -1,0 +1,69 @@
+<div class="wrapper-login-form d-flex d-all-center">
+
+
+  <div class="login-form">
+      <div class="d-flex d-all-center">
+          <i class="logo-icon uil uil-apps"></i>
+      </div>
+
+      <div class="text-label d-flex d-all-center">
+          Iniciar sesión
+      </div>
+      <pre>
+        {{registerForm.value | json}}
+      </pre>
+
+      <form [formGroup]="registerForm"  class="form d-flex"> <!--  -->
+          <div class="form-input">
+              <input formControlName="email"
+              type="text" placeholder="Introduzca el correo electrónico">
+          </div>
+          <div class="form-input">
+            <input formControlName="name"
+            type="text" placeholder="Introduzca su nombre">
+        </div>
+
+        <div class="form-input">
+          <input formControlName="lastName"
+          type="text" placeholder="Introduzca su apellido">
+      </div>
+
+      <div class="form-input">
+        <input formControlName="phone"
+        type="text" placeholder="Introduzca su telefono">
+    </div>
+
+    <div class="form-input">
+      <input formControlName="aboutMe"
+      type="text" placeholder="Introduzca una descripcion">
+  </div>
+        <!--
+          <div class="form-input">
+              <input formControlName="password"
+              type="password" placeholder="Introduzca la contraseña">
+          </div>
+          <div class="form-input">
+            <input formControlName="passwordConfirm"
+            type="password" placeholder="Confirme la contraseña">
+          </div>-->
+          <div class="form-input">
+             <!--  -->
+            <button [disabled]="registerForm.invalid" class="btn-primary">Iniciar sesión</button>
+          </div>
+          <div>o</div>
+          <div class="form-input">
+              <button class="btn-default"><i class="uil uil-google"></i> Continuar con Google</button>
+          </div>
+          <div class="form-input">
+              <button class="btn-default"><i class="uil uil-windows"></i> Continuar con Microsoft</button>
+          </div>
+          <div class="form-input">
+              <button  class="btn-default"><i class="uil uil-apple"></i> Continuar con Apple</button>
+          </div>
+      </form>
+  </div>
+
+      <!-- <app-register-form></app-register-form> -->
+
+
+</div>
