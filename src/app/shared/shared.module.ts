@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReapleSpacePipe } from './pipes/reaple-space.pipe';
+import { ImagBrokenDirective } from './directives/imag-broken.directive';
 
 
 
 @NgModule({
   declarations: [
-    ReapleSpacePipe
+    ReapleSpacePipe,
+    ImagBrokenDirective
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ReapleSpacePipe
+    ReapleSpacePipe,
+    ImagBrokenDirective
   ],
   providers: [
     ReapleSpacePipe

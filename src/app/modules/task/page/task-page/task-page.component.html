@@ -1,1 +1,40 @@
-<p>task-page works!</p>
+<app-header></app-header>
+<!-- <div class="padre" [ngSwitch]="case">
+  <div *ngSwitchCase="1" class="hijo" >Pedro</div>
+  <div *ngSwitchCase="2" class="hijo">Maria</div>
+  <div *ngSwitchCase="3" class="hijo">Jose</div>
+  <div *ngSwitchDefault class="hijo">Por Defecto</div>
+</div> -->
+<!-- <div>
+  <img appImagBroken src="https://avatars.githubusercontent.com/u/15802366?v=4" alt="" sizes="" srcset="">
+</div> -->
+
+<!-- <div>
+  <ul *ngIf="results.length > 4 else tplNotFound">
+    <li *ngFor="let item of results">
+        {{item}}
+    </li>
+  </ul>
+</div>
+
+<ng-template #tplNotFound>
+  <p>No hay resultados</p>
+</ng-template> -->
+
+<!-- <ul>
+  <li *ngFor="let user of listUser">
+      <ng-container *ngTemplateOutlet="tplHello;context:{currentUser:user}">
+      </ng-container>
+  </li>
+</ul> -->
+
+
+<!-- <ng-template #tplHello let-myuser="currentUser">
+  Hola buenos dias {{myuser?.name}}
+</ng-template> -->
+
+<div class="task-columns">
+  <app-column  [name] = "group.label"  [data]="group.list" *ngFor="let group of groups">
+
+  </app-column>
+</div>

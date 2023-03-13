@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path:'task', //TODO : Private
     loadChildren: () => import("@modules/task/task.module").then((m) => m.TaskModule),
-    canActivate:[ValidateSessionGuard]
+    // canActivate:[ValidateSessionGuard]
   }
 
   // {
